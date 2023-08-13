@@ -1,9 +1,8 @@
-import math
 import itertools
 
 class Seq_alignment(): 
     '''
-    This class contains a total of 9 methods including an initializing constructor.
+    This class contains a total of 7 methods including an initializing constructor.
     Let us see what each function is doing in this program:
         1) __init__ - This initializes the variables seq_1,seq_2,l1,l2 through the class object "construct_sa".
         2) permutation_tuple_duplicates - This creates two two-dimensional arrays of the different permutations of the respective nucleic acid strings (including the gaps).
@@ -11,9 +10,8 @@ class Seq_alignment():
         4) twod_to_oned - This function converts the two-dimensional arrays into one-dimensional arrays for further processing.
         5) sequence_array - This function removes the "_" character from each string of the two one-dimensional arrays to compare the resultant strings with the two respective original sequences for futher elimination.
         6) deletion - This function removes the strings from the two one-dimensional arrays whose sequences (without the gaps: "_"), don't match the original two sequences. 
-        7) oned_to_twod - This function creates a new one-dimensional array which contains all possible combinations of strings from both the first and second string. Next, it converts this one-dimensional array into a two-dimensional array with each sub-array of length 2 to compare each permutation of the two sequences (with/without gaps).
+        7) oned_to_twod - This function creates a new one-dimensional array which contains all possible combinations of strings from both the first and second strings. Next, it converts this one-dimensional array into a two-dimensional array with each sub-array of length 2 to compare each permutation of the two sequences (with/without gaps).
         8) underscore_comp - This function compares the two strings in each sub-array of the two-dimensional array character by character to check if a gap doesn't align with another gap because it doesn't make sense.
-        9) alignment_score - This function is used to find the optimal alignment and also calculate the optimal alignment score
     '''
     
     def __init__(self,seq_1,seq_2,l1,l2):
