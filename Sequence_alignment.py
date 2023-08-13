@@ -3,7 +3,7 @@ import itertools
 
 class Seq_alignment(): 
     '''
-    This class contains a total of 7 methods including an initializing constructor.
+    This class contains a total of 9 methods including an initializing constructor.
     Let us see what each function is doing in this program:
         1) __init__ - This initializes the variables seq_1,seq_2,l1,l2 through the class object "construct_sa".
         2) permutation_tuple_duplicates - This creates two two-dimensional arrays of the different permutations of the respective nucleic acid strings (including the gaps).
