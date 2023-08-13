@@ -12,6 +12,7 @@ class Seq_alignment():
         6) deletion - This function removes the strings from the two one-dimensional arrays whose sequences (without the gaps: "_"), don't match the original two sequences. 
         7) oned_to_twod - This function creates a new one-dimensional array which contains all possible combinations of strings from both the first and second strings. Next, it converts this one-dimensional array into a two-dimensional array with each sub-array of length 2 to compare each permutation of the two sequences (with/without gaps).
         8) underscore_comp - This function compares the two strings in each sub-array of the two-dimensional array character by character to check if a gap doesn't align with another gap because it doesn't make sense.
+        9) alignment_score - This function finds the optimal alignments and calculates the optimal alignment score.
     '''
     
     def __init__(self,seq_1,seq_2,l1,l2):
